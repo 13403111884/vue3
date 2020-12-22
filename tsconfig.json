@@ -33,7 +33,8 @@
     "src/router/index.ts",
     "src/store/index.ts",
     "src/main.ts",
-    "src/plugins/singleSpa.js"
+    "src/plugins/singleSpa.js",
+    "src/modules/setting/index.js"
   ],
   "exclude": [
     "node_modules",
