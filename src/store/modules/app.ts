@@ -6,7 +6,7 @@ export default {
     getters: {},
 
     mutations: {
-        getRouteName (state, {route, routeName}) {
+        getRouteName (state: any, {route, routeName}: any) {
             routeName = route.name
         }
     },

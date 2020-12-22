@@ -20,7 +20,7 @@ service.interceptors.response.use(config => {
   return Promise.reject(err)
 })
 
-function API (config) {
+function API (config: any | undefined) {
   const {
     url = '',
     data = null,

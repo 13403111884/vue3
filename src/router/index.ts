@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import routerFiles from 'globby!/@m/**/*.router.ts'
+import routerFiles from 'globby!/@m/**/*.router.*'
 
 const routers: any = Object.values(routerFiles).reduce((modules: any, module: any) => {
   modules = [
@@ -14,13 +14,13 @@ const routes = [
     path: "/",
     name: "Home",
     meta: { title: '首页', icon: 'md-apps', show: true, roles: [] },
-    component: () => import("/@/views/Home.vue"),
+    component: () => import("./../views/Home.vue"),
   },
   {
     path: "/setting",
     name: "Setting",
     meta: { title: '设置', icon: 'md-apps', show: true, roles: [] },
-    component: () => import("/@/views/Setting.vue"),
+    component: () => import("./../views/Setting.vue"),
   },
   ...routers
 ];
@@ -33,7 +33,7 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  document.title = (to.meta && to.meta.title) || '学员端'
+  document.title = (to.meta && to.meta.title) || 'vue3'
   next()
 });
 
