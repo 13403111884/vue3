@@ -19,7 +19,7 @@
 <script lang="ts">
 import { defineComponent, PropType, ref, watch } from "vue";
 
-import logo from "/@/assets/logo.png";
+import logo from "/@/assets/logo.png"
 
 export default defineComponent({
   name: "Logo",
@@ -46,9 +46,9 @@ export default defineComponent({
     return {
       logo,
       show: showRef,
-    };
+    }
   },
-});
+})
 </script>
 
 <style lang="scss">

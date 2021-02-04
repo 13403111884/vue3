@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore } from "vuex"
 
 import modulesFiles from 'globby!/@store/modules/*'
 
@@ -10,17 +10,17 @@ const modules: any = Object.values(modulesFiles).reduce((modules: any, module: a
 export default createStore({
   state() {
     return {
-      count: 0,
-    };
+      count: 0
+    }
   },
   mutations: {
     increment(state: any) {
-      state.count++;
+      state.count++
     },
   },
   actions: {
     increment(context) {
-      context.commit("increment");
+      context.commit("increment")
     },
   },
   getters: {
@@ -29,4 +29,4 @@ export default createStore({
     }
   },
   modules
-});
+})

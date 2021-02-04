@@ -1,5 +1,5 @@
-import Axios from 'axios';
-import baseURL from './../config/url';
+import Axios from 'axios'
+import baseURL from './../config/url'
 
 const service = Axios.create({ withCredentials: false, baseURL })
 // 请求拦截器

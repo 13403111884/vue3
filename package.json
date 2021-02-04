@@ -4,7 +4,7 @@
   "scripts": {
     "cnpm": "npm --registry https://registry.npm.taobao.org install",
     "dev": "cross-env NODE_ENV=development vite",
-    "build": "vite build"
+    "build": "cross-env NODE_ENV=production vite build"
   },
   "dependencies": {
     "axios": "^0.21.0",

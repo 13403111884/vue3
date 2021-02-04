@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted, getCurrentInstance, ref, computed, nextTick } from "vue";
-import { useStore } from "vuex";
-import { useRouter } from "vue-router";
+import { defineComponent, onMounted, getCurrentInstance, ref, computed, nextTick } from "vue"
+import { useStore } from "vuex"
+import { useRouter } from "vue-router"
 
 export default defineComponent({
   name: "Setting",
@@ -30,5 +30,5 @@ export default defineComponent({
       routeName
     }
   }
-});
+})
 </script>
